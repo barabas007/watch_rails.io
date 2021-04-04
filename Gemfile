@@ -21,11 +21,19 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'pry'
-gem 'database_cleaner'
+
+gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
 
 gem 'pg', '~> 1.2', '>= 1.2.3'
 gem 'oj'
 gem 'oj_mimic_json'
+gem 'sassc-rails'
+gem 'coffee-rails'
+gem 'jquery-rails'
+gem 'devise'
+gem 'bootstrap-sass'
+gem 'pundit'
+gem 'factory_bot'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -37,7 +45,13 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
    gem 'rspec-rails'
    gem 'pg', '~> 1.2', '>= 1.2.3'
+   gem 'database_cleaner'
    gem 'pry'
+   gem 'rails-controller-testing'
+   gem 'factory_bot'
+   gem 'rspec-json_expectations'
+   gem 'rb-readline'
+
 
 end
 
@@ -48,14 +62,20 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
 end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
+
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem 'shoulda-matchers'
+  gem 'json_spec'
+  gem 'db-query-matchers'
+  gem 'launchy'
+  gem 'rubocop', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
