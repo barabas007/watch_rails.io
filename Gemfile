@@ -34,6 +34,10 @@ gem 'devise'
 gem 'bootstrap-sass'
 gem 'pundit'
 gem 'factory_bot'
+gem 'meta-tags'
+gem 'breadcrumbs_on_rails'
+gem 'uglifier'
+gem 'bootstrap-sass'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
